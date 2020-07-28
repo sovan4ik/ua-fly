@@ -1,0 +1,119 @@
+/* @media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+
+}
+ */
+
+
+@media (max-width: 640px) {
+  .team-text p{
+    font-size: 13px;
+line-height: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .teams-card-photo{
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .figure-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+
+.social p{
+  font-size: 8px;
+line-height: 10px;
+}
+.community-social-info {
+    margin: 4px 0px;
+}
+.community-social .figure-case {
+  min-width: 130px;
+  height: 200px;
+  border-radius: 15px;
+}
+.community-social .figure-case:first-child {
+margin-right: 30px;
+}
+
+.community-social .figure{
+    background: url(img/community-social-figure.png) no-repeat;
+    background-position: top;
+    background-size: contain;
+    margin: 0 auto;
+    width: 90px;
+    height: 16px;
+    margin-bottom: 20px;
+  }
+
+
+.community-social .figure-case img {
+  width: 60px;
+  height: 60px;
+}
+.community-social-info {
+    height: 36px;
+      margin-bottom: 18px;
+}
+
+
+.community-social .community-social-info a{
+font-size: 8px;
+line-height: 10px;
+}
+.community-social .community-social-info p{
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.question p {
+  font-size: 8px;
+line-height: 10px;
+  }
+
+}
+@media (max-width: 640px) {
+  .group {
+    margin-top: 15px;
+  }
+  .group label{
+    font-size: 13px;
+line-height: 14px;
+  }
+
+  .group input:focus~label, .group input:valid~label {
+    top: -10px;
+    font-size: 12px;
+    color: #42949B;
+  }
+
+.custom-checkbox+label {
+  font-size: 13px;
+line-height: 14px;
+}
+.custom-checkbox+label::before {
+    width: 18px;
+    height: 18px;
+}
+.btn-pos{
+  justify-content: center;
+}
+}

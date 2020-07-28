@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Test</title>
+  <link rel="stylesheet" href="../test/main.css">
+<link rel="stylesheet" href="../test/responsitive.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" charset="utf-8"></script>
+
+  <!-- <link rel="stylesheet" href="https://swiperjs.com/package/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="../test/swiper-bundle.min.css">
+  <script src="https://swiperjs.com/package/swiper-bundle.min.js"></script>
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.collapse.in').prev('.panel-heading').addClass('active');
+        $('#accordion, #bs-collapse')
+          .on('show.bs.collapse', function(a) {
+            $(a.target).prev('.panel-heading').addClass('active');
+          })
+          .on('hide.bs.collapse', function(a) {
+            $(a.target).prev('.panel-heading').removeClass('active');
+          });
+      });
+    </script>
+
+</head>
+
+<body>
+  <div class="top">
+    <div class="container nav">
+      <div class="nav-logo"></div>
+      <div class="nav-bar">
+        <a href="steam://rungameid/271590" class="news">Новини</a>
+        <ul class="nav-lang">
+          <li><a href="#">УКР</a></li>
+          <span class="line"></span>
+          <li><a href="#">РУС</a></li>
+          <span class="line"></span>
+          <li><a href="#">ENG</a></li>
+        </ul>
+      </div>
+      <!-- <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div> -->
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="ukr-dev"></div>
+      <div class="widget-3d-model">
+        <div class="btn-click-twist">
+          <div class="btn-twist-border"><img class="btn-twist-img" src="img/twist.svg" alt=""></div>
+          <span class="btn-twist-text">Покрути модель</span>
+        </div>
+      </div>
+
+      <div class="head-text">
+        <div class="head-text-item">
+          <div class="rectangle"></div>
+          <div class="head-text-style">Інтегральний фюзеляж і крила -
+            <p class="text-gray">додаткова підйомна сила, економічність, дальність</p>
+          </div>
+        </div>
+        <div class="head-text-item">
+          <div class="rectangle"></div>
+          <div class="head-text-style">Висока Безпека -
+            <p class="text-gray">м'яка посадка на авторотації навіть із вимкнуненим двигуном</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <div class="container">
+    <div class="advantage">
+      <div class="advantage-item">
+        <div class="advantage-item__title">Режим екраноплана</div>
+        <div class="advantage-item__img"><img src="img/icons/1.png" alt=""></div>
+        <div class="advantage-item__info">надекономний політ <br>в межах ефекту "екрану"</div>
+      </div>
+      <div class="advantage-item">
+        <div class="advantage-item__title">Режим човна</div>
+        <div class="advantage-item__img"><img src="img/icons/2.png" alt=""></div>
+        <div class="advantage-item__info">взліт і посадка з водних поверхонь, надуніверсальність</div>
+      </div>
+      <div class="advantage-item">
+        <div class="advantage-item__title">Режим автожира</div>
+        <div class="advantage-item__img"><img src="img/icons/3.png" alt=""></div>
+        <div class="advantage-item__info">горизонтальний політ і посадка, надбезпека</div>
+      </div>
+      <div class="advantage-item">
+        <div class="advantage-item__title">Режим трикоптера</div>
+        <div class="advantage-item__img"><img src="img/icons/4.png" alt=""></div>
+        <div class="advantage-item__info">надманевренність, вертикальний взліт і посадка</div>
+      </div>
+    </div>
+    <div class="text-title">унікальні&nbsp;<div class="text-title-b-indent">переваги</div>
+    </div>
+
+    <div class="unique-benefits">
+
+      <div class="figure-case" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="figure"></div>
+        <div class="figure-title">Технічні характеристики</div>
+        <div class="panel">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Група характеристик 1
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <p>Швидкість <span>199.99</span></p>
+              <p>Дальність <span>1000 м</span></p>
+              <p>Маса <span>999.99 кг</span></p>
+              <p>Екіпаж <span>5</span></p>
+              <p>Вага 1 <span>99.99</span></p>
+              <p>Вага О <span>99.99 кг</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Група характеристик 2
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <p>Швидкість <span>199.99</span></p>
+              <p>Дальність <span>1000 м</span></p>
+              <p>Маса <span>999.99 кг</span></p>
+              <p>Екіпаж <span>5</span></p>
+              <p>Вага 1 <span>99.99</span></p>
+              <p>Вага О <span>99.99 кг</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Група характеристик 3
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              <p>Швидкість <span>199.99</span></p>
+              <p>Дальність <span>1000 м</span></p>
+              <p>Маса <span>999.99 кг</span></p>
+              <p>Екіпаж <span>5</span></p>
+              <p>Вага 1 <span>99.99</span></p>
+              <p>Вага О <span>99.99 кг</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Група характеристик 4
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+              <p>Швидкість <span>199.99</span></p>
+              <p>Дальність <span>1000 м</span></p>
+              <p>Маса <span>999.99 кг</span></p>
+              <p>Екіпаж <span>5</span></p>
+              <p>Вага 1 <span>99.99</span></p>
+              <p>Вага О <span>99.99 кг</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Група характеристик 5
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="panel-body">
+              <p>Швидкість <span>199.99</span></p>
+              <p>Дальність <span>1000 м</span></p>
+              <p>Маса <span>999.99 кг</span></p>
+              <p>Екіпаж <span>5</span></p>
+              <p>Вага 1 <span>99.99</span></p>
+              <p>Вага О <span>99.99 кг</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-heading" role="tab" id="headingSix">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Група характеристик 6
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+            <div class="panel-body">
+              <p>Швидкість <span>199.99</span></p>
+              <p>Дальність <span>1000 м</span></p>
+              <p>Маса <span>999.99 кг</span></p>
+              <p>Екіпаж <span>5</span></p>
+              <p>Вага 1 <span>99.99</span></p>
+              <p>Вага О <span>99.99 кг</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="plane"></div>
+    </div>
+
+    <div class="text-title">команда&nbsp;<div class="text-title-b-indent">проєкту</div>
+    </div>
+    <div class="team-text">
+      <p><span>Створена в 2013</span> команда експертів зібрала екпертів з величезним досвідом у сфері інженерії.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et at proin risus, elit amet, diam dui adipiscing. Nulla enim aliquam sit erat aenean aliquam blandit elementum. <span>Amet gravida</span> elementum massa, odio urna condimentum
+        auctor ultricies neque. Vulputate morbi iaculis sapien, quam et massa amet nulla faucibus.</p>
+      <p>Fringilla ornare donec <span>faucibus consequat.</span> A amet enim, quis egestas id scelerisque magnis sed. Aenean sapien aliquet sit amet, mauris, proin tellus at aliquam.
+      </p>
+    </div>
+
+    <div class="teams-card row">
+      <div class="swiper-container-teams-card">
+        <div class="swiper-wrapper swiper-slide-active">
+          <div class="swiper-slide">
+            <div class="card-item">
+              <div class="teams-card-photo">
+                <img src="img/photo/1.png" alt=""></div>
+              <div class="teams-card-name">Роман Аркадійович</div>
+              <div class="teams-card-position">СЕО проєкту</div>
+              <div class="teams-card-info">Знань недостатньо, ти повинен застосовувати їх. бажань недостатньо, ти повинен працювати.</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-item">
+              <div class="teams-card-photo">
+                <img src="img/photo/2.png" alt=""></div>
+              <div class="teams-card-name">Григорій сигізмундович</div>
+              <div class="teams-card-position">провідний інженер</div>
+              <div class="teams-card-info">Душа проєкту - це мрійник, що втілює свою велику ідею в життя.</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-item">
+              <div class="teams-card-photo">
+                <img src="img/photo/3.png" alt=""></div>
+              <div class="teams-card-name">Георгій коновальцев</div>
+              <div class="teams-card-position">маркетолог</div>
+              <div class="teams-card-info">Знань недостатньо, ти повинен застосовувати їх. бажань недостатньо, ти повинен працювати.</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-item">
+              <div class="teams-card-photo">
+                <img src="img/photo/4.png" alt=""></div>
+              <div class="teams-card-name">Роман Романович</div>
+              <div class="teams-card-position">PR-менеджер</div>
+              <div class="teams-card-info">Знань недостатньо, ти повинен застосовувати їх. бажань недостатньо, ти повинен працювати.</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-item">
+              <div class="teams-card-photo">
+                <img src="img/photo/3.png" alt=""></div>
+              <div class="teams-card-name">Георгій коновальцев</div>
+              <div class="teams-card-position">маркетолог</div>
+              <div class="teams-card-info">Знань недостатньо, ти повинен застосовувати їх. бажань недостатньо, ти повинен працювати.</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-item">
+              <div class="teams-card-photo">
+                <img src="img/photo/4.png" alt=""></div>
+              <div class="teams-card-name">Роман Романович</div>
+              <div class="teams-card-position">PR-менеджер</div>
+              <div class="teams-card-info">Знань недостатньо, ти повинен застосовувати їх. бажань недостатньо, ти повинен працювати.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item-nav row">
+      <i class="item-nav-prev"></i>
+      <a class="swiper-teams-card-prev" href="#">prev</a>
+      <i class="item-nav-line"></i>
+      <a class="swiper-teams-card-next" href="#">next</a>
+      <i class="item-nav-next"></i>
+    </div>
+
+
+    <div class="text-title">читай&nbsp;<div class="text-title-b-indent">новини</div>
+    </div>
+
+
+    <div class="news-cards row">
+      <div class="swiper-container-news-cards">
+        <div class="swiper-wrapper swiper-slide-active">
+
+      <div class="swiper-slide">
+      <div class="card-item">
+        <div class="news-img"><img src="img/news_img.png" alt=""></div>
+        <div class="news-content">
+          <div class="news-title">заговок новини заговок новини заговок новини заговок новини </div>
+          <div class="news-date">чч/мм/рррр</div>
+          <div class="news-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nullam justo amet sed donec. Tortor venenatis, vitae at platea tellus eros, pretium, ut consectetur. Vitae massa feugiat.</div>
+        </div>
+        <button type="button" class="btn" name="button">читати далі →</button>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="card-item">
+        <div class="news-img"><img src="img/news_img.png" alt=""></div>
+        <div class="news-content">
+          <div class="news-title">заговок новини заговок новини заговок новини заговок новини </div>
+          <div class="news-date">чч/мм/рррр</div>
+          <div class="news-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nullam justo amet sed donec. Tortor venenatis, vitae at platea tellus eros, pretium, ut consectetur. Vitae massa feugiat.</div>
+        </div>
+        <button type="button" class="btn" name="button">читати далі →</button>
+      </div>
+    </div>
+      <div class="swiper-slide">
+      <div class="card-item">
+        <div class="news-img"><img src="img/news_img.png" alt=""></div>
+        <div class="news-content">
+          <div class="news-title">заговок новини заговок новини заговок новини заговок новини </div>
+          <div class="news-date">чч/мм/рррр</div>
+          <div class="news-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nullam justo amet sed donec. Tortor venenatis, vitae at platea tellus eros, pretium, ut consectetur. Vitae massa feugiat.</div>
+        </div>
+        <button type="button" class="btn" name="button">читати далі →</button>
+      </div>
+    </div>
+      <div class="swiper-slide">
+      <div class="card-item">
+        <div class="news-img"><img src="img/news_img.png" alt=""></div>
+        <div class="news-content">
+          <div class="news-title">заговок новини заговок новини заговок новини заговок новини </div>
+          <div class="news-date">чч/мм/рррр</div>
+          <div class="news-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget nullam justo amet sed donec. Tortor venenatis, vitae at platea tellus eros, pretium, ut consectetur. Vitae massa feugiat.</div>
+        </div>
+        <button type="button" class="btn" name="button">читати далі →</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="item-nav row">
+      <i class="item-nav-prev"></i>
+      <a class="swiper-news-cards-prev" href="#">prev</a>
+      <i class="item-nav-line"></i>
+      <a class="swiper-news-cards-next" href="#">next</a>
+      <i class="item-nav-next"></i>
+    </div>
+
+    <div class="text-title">спів <div class="text-title-b">товариство</div></div>
+
+<div class="social">
+  <p>Стань частиною нашого співтовариства в соцмережах, задавай питання, допомагай відповідями іншим.</p>
+</div>
+    <div class="community-social row">
+
+      <div class="figure-case">
+        <div class="figure"></div>
+        <div class="figure-title">YouTube</div>
+        <div class="community-social-info">
+          <p>Бекстейджі, відео, інтерв’ю <br> на нашому каналі</p>
+          <a href="#">Детальніше</a>
+        </div>
+        <img src="img/icons/yt.png" alt="">
+      </div>
+
+      <div class="figure-case">
+        <div class="figure"></div>
+        <div class="figure-title">Facebook</div>
+        <div class="community-social-info">
+          <p>Будь в курсі розвитку проєкту <br> та новин від команди</p>
+          <a href="#">Детальніше</a>
+        </div>
+        <img src="img/icons/fb.png" alt="">
+      </div>
+    </div>
+
+
+<div class="question">
+    <div class="text-title">залишились&nbsp;<div class="text-title-b-indent">питання?</div></div>
+
+    <p>Можете зв`язатись з нами за допомогою електронної форми. Ми охоче відповімо на Ваші запитання.</p>
+
+    <form>
+      <div class="group-col-3">
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Ім’я<span>*</span></label>
+        </div>
+
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Email<span>*</span></label>
+        </div>
+
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Телефоны<span>*</span></label>
+        </div>
+      </div>
+      <div class="group-col">
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Повідомлення</label>
+        </div>
+      </div>
+    </form>
+
+
+    <div class="checkbox-position">
+      <input class="custom-checkbox" type="checkbox" id="var-1" name="" value="">
+      <label for="var-1">Я погоджуюся з правилами обробки моїх персональних даних, згідно <a href="#">Політиці конфіденційності</a></label>
+      <input class="custom-checkbox" type="checkbox" id="var-2" name="" value="">
+      <label for="var-2">Хочу підписатися на розсилку новин від вас</label>
+  </div>
+    <div class="btn-pos"><button type="button" class="btn" name="button">Відправити</button></div>
+</div>
+
+
+<div class="gallery">
+    <div class="text-title">фото<div class="text-title-b">галерея</div>
+    </div>
+разобраться с отступами картинок
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<div class="gallery-img-pos">
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-l"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-s"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-s"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-s"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-s"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-l"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-s"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-s"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-s"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+    <a data-fancybox="gallery" href="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"><img class="img-s"
+        src="https://avatars.mds.yandex.net/get-zen_doc/1612125/pub_5d762c118600e100add15cdb_5d762c1b7cccba00ad0f1e5d/scale_1200"></a>
+
+</div>
+</div>
+
+  </div>
+
+  <br>
+
+  <footer>
+
+    <div class="footer-map-line"></div>
+    <div class="footer-map"></div>
+    <div class="footer-nav">
+      <div class="container">
+      <p>(с) 2020 effect-m.com<br>Всі права захищені</p>
+      <div class="footer-soc-links">
+        <a class="footer-nav-link nav-yt" href="#"></a>
+        <a class="footer-nav-link nav-fb" href="#"></a>
+      </div>
+      <img src="img/footer-nav-logo.png" alt="">
+    </div>
+    </div>
+  </footer>
+
+
+  <script>
+    var swiper = new Swiper('.swiper-container-teams-card', {
+      speed: 500,
+      // spaceBetween: 30,
+      slidesPerView: 4,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-teams-card-next',
+        prevEl: '.swiper-teams-card-prev',
+      },
+  //     breakpoints: {
+  //   360: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 20,
+  //   },
+  //
+  //   768: {
+  //     slidesPerView: 3,
+  //   },
+  //   1200: {
+  //     slidesPerView: 4,
+  //   },
+  // },
+    });
+
+    var swiper = new Swiper('.swiper-container-news-cards', {
+      speed: 500,
+      spaceBetween: 30,
+      slidesPerView: 4,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-news-cards-next',
+        prevEl: '.swiper-news-cards-prev',
+      },
+
+    });
+  </script>
+
+</body>
+
+</html>
